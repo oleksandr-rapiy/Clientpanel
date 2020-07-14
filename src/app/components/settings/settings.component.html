@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-md-6">
+        <a routerLink="/" class="btn btn-link">
+            <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+            Back To Dashboard
+        </a>
+    </div>
+    <div class="col-md-6">
+
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title text-center">Settings</h5>
+        <form (submit)="onSubmit()">
+            <div class="custom-control custom-checkbox m-3">
+                <input type="checkbox" class="custom-control-input" id="allowRegistration"  name="allowRegistration"
+                [checked]="settings.allowRegistration" (change)="settings.allowRegistration = !settings.allowRegistration">
+                <label class="custom-control-label" for="allowRegistration">Allow Registration</label>
+            </div>
+            <div class="custom-control custom-checkbox m-3">
+                <input type="checkbox" class="custom-control-input" id="disableBalanceOnAdd"  name="disableBalanceOnAdd"
+                [checked]="settings.disableBalanceOnAdd" (change)="settings.disableBalanceOnAdd = !settings.disableBalanceOnAdd">
+                <label class="custom-control-label" for="disableBalanceOnAdd">Disable Balance on Add</label>
+            </div>
+            <div class="custom-control custom-checkbox m-3">
+                <input type="checkbox" class="custom-control-input" id="disableBalanceOnEdit"  name="disableBalanceOnEdit"
+                [checked]="settings.disableBalanceOnEdit" (change)="settings.disableBalanceOnEdit = !settings.disableBalanceOnEdit">
+                <label class="custom-control-label" for="disableBalanceOnEdit">Disable Balance on Edit</label>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-outline-primary btn-block">
+        </form>
+    </div>
+</div>

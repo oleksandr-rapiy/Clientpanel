@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "clientpanel-c17cb": {
+      "hosting": {
+        "clientpanel": [
+          "clientpanel-c17cb"
+        ]
+      }
+    }
+  }
+}
